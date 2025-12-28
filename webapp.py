@@ -11,7 +11,7 @@ def add_todo():
 
 
 
-st.title("My Todo App")
+st.title("<b>My Todo App</b>")
 st.subheader("This is my todo app")
 st.write("This app is to increase productivity")#not more than 79 characters
 
