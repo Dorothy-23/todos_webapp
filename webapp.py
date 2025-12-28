@@ -14,6 +14,9 @@ def add_todo():
 st.title("My Todo App")
 st.subheader("This is my todo app")
 st.write("This app is to increase productivity")#not more than 79 characters
+
+st.text_input(label="",placeholder="Enter your todo item for the day",
+              on_change=add_todo,key='new_todo')
 st.checkbox("Buy grocery")
 st.checkbox("Buy cars")
 
@@ -26,7 +29,6 @@ for index, todo in enumerate(todos):
         del st.session_state[todo]
         st.rerun()
 
-st.text_input(label="",placeholder="Enter your todo item for the day",
-              on_change=add_todo,key='new_todo')
+
 
 
