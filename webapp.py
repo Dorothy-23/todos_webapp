@@ -17,7 +17,6 @@ st.write("This app is to increase productivity")#not more than 79 characters
 #st.checkbox("Buy grocery")
 #st.checkbox("Buy cars")
 
-
 for index, todo in enumerate(todos):
     checkbox=st.checkbox(todo,key=todo)
     if checkbox:
